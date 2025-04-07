@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cadastro de Estoque</title>
+</head>
+<body>
+  <script>
+    // Solicita o saldo inicial e converte para inteiro
+    let saldo = parseInt(prompt("Informar saldo inicial"));
+    document.write("Saldo inicial: " + saldo + "<br>");
+
+    // Define se o sistema continua ou não
+    let encerrar = "n";
+
+    // Enquanto o usuário não quiser encerrar
+    while (encerrar === "n") {
+      // Solicita tipo de operação
+      let tipo = parseInt(prompt("Informar tipo de entrada (1 para entrada / 2 para saída)"));
+      let quantidade = parseInt(prompt("Informar quantidade"));
+
+      // Operação de entrada
+      if (tipo === 1) {
+        saldo += quantidade;
+        document.write("Entrada: " + quantidade + "<br>");
+      }
+
+      // Operação de saída
+      if (tipo === 2) {
+        if (saldo >= quantidade) {
+          saldo -= quantidade;
+          document.write("Saída: " + quantidade + "<br>");
+        } else {
+          document.write("Saldo insuficiente<br>");
+          alert("Saldo insuficiente");
+        }
+      }
+
+      // Mostra o saldo após a operação
+      document.write("Saldo: " + saldo + "<br>");
+
+      // Pergunta se deseja encerrar
+      encerrar = prompt("Deseja encerrar? (s/n)");
+    }
+
+    // Mensagem final
+    document.write("Sistema encerrado<br>");
+  </script>
+</body>
+</html>
