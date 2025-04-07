@@ -70,6 +70,8 @@ O sistema foi desenvolvido com base em um **fluxograma** contendo:
 3. Siga os prompts para inserir saldo, tipo de operação e quantidade
 4. Observe o resultado direto na tela
 
-## 📚 Fonte
+## 📸 Print mostrando um teste.
+![Caso de uso no navegador](imagens/Capturar.png)
 
+## 📚 Fonte
 Este projeto faz parte da **Unidade Curricular de Lógica de Programação – SENAI**, com base no material fornecido na atividade prática.
